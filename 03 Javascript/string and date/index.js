@@ -56,7 +56,7 @@ const owndate= new Date(2025,11,12,11,45,34,127);
 // why this inconsistenecy is not removed in js?
 // ans- because many website are made on this inconsistency if changed , all the website will suffer
 
-const current = Date.current();  // output is in milliseconds
+const current = Date.now();  // output is in milliseconds
 //if we put this output in date(here) it will give exact date
 
 //const old= Date.old();    ---> Thu Jan 01 1970

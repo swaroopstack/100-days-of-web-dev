@@ -69,3 +69,4 @@ const current = Date.current();  // output is in milliseconds
 // ans- we will check univesal time UTC
 
 //UTC importance?
+// How browser handle UTC time

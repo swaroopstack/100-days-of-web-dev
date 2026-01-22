@@ -1,0 +1,30 @@
+body {
+  padding: 25px;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.plan_card {
+  background-color: beige;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px;
+}
+
+h2 {
+  color: brown;
+}
+
+h4 {
+  color: green;
+}
+
+h1 {
+  color: beige;
+}

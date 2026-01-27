@@ -1,30 +1,41 @@
 body {
   padding: 25px;
-  background-color: black;
+  background-color: #0f0f0f;   /* softer black */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #f5f5dc;
+  margin-bottom: 30px;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .plan_card {
-  background-color: beige;
+  background-color: #f5f5dc;   /* cleaner beige */
   margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 20px;
+  padding: 25px;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.plan_card ul {
+  padding-left: 20px;
+  text-align: left;
 }
 
 h2 {
-  color: brown;
+  color: #7a2e2e;
+  margin-bottom: 10px;
 }
 
 h4 {
-  color: green;
-}
-
-h1 {
-  color: beige;
+  color: #1e7f3b;
+  margin-top: 15px;
 }

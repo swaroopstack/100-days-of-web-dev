@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+<div id="root"></div>
+
+<script type="text/babel">
+
+function App(){
+
+const [text,setText]=React.useState("");
+const [notes,setNotes]=React.useState([]);
+const [edit,setEdit]=React.useState(null);
+
+const save=()=>{
+if(!text) return;
+
+if(edit!=null){
+let n=[...notes];
+n[edit].text=text;
+setNotes(n);
+setEdit(null);
+}
+else{
+setNotes([{text,time:new Date().toLocaleTimeString()},...notes]);
+}
+
+setText("");
+};
+
+return(
+
+<div>
+
+<textarea
+value={text}
+onChange={(e)=>setText(e.target.value)}
+/>
+
+<br/>
+
+<button onClick={save}>
+{edit!=null?"Update":"Add"}
+</button>
+
+<hr/>
+
+{notes.map((n,i)=>
+
+<div key={i}>
+
+{n.text} <br/>
+<small>{n.time}</small><br/>
+
+<button onClick={()=>{
+setText(n.text);
+setEdit(i);
+}}>
+Edit
+</button>
+
+<hr/>
+
+</div>
+
+)}
+
+</div>
+
+);
+
+}
+
+ReactDOM.createRoot(document.getElementById("root"))
+.render(<App/>);
+
+</script>
+
+</body>
+</html>

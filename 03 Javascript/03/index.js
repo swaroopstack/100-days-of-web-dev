@@ -218,3 +218,6 @@ console.log(a||b);
 // AND: & , | or
 
 console.log(2&5);
+
+var college="chandigarh";
+console.log("college:", college);

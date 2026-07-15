@@ -1,0 +1,18 @@
+{
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.editor.empty.hint": "hidden",
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "redhat.telemetry.enabled": true,
+  "emmet.useInlineCompletions": true,
+  "json.schemas": [
+
+  ],
+
+  "files.associations": {
+    "*.pcss": "css",
+    "*.postcss": "css"
+  },
+  "workbench.settings.useSplitJSON": false,
+  "workbench.settings.editor": "ui"
+}
